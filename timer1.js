@@ -1,6 +1,6 @@
 // Get the inputs from the CMD
 let alarmsArray = process.argv.slice(2).sort((a, b) => a - b);
-// Transforms the array of string in an array of numbers
+// Transforms the array of strings in an array of numbers
 let alarmsArrayNumber = alarmsArray.map(e => Number(e));
 // Filter the array to keep only numbers > 0
 let alarmsArrayFiltered = alarmsArrayNumber.filter(e => Number.isInteger(e) && e > 0);
